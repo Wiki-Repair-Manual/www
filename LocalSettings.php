@@ -115,6 +115,7 @@ $wgDiff3 = "";
 
 # The following permissions were set based on your choice in the installer
 $wgGroupPermissions['*']['edit'] = false;
+$wgGroupPermissions['sysop']['edit-html'] = true;
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
@@ -137,7 +138,7 @@ wfLoadExtension( 'ConfirmEdit' );
 wfLoadExtension( 'SpamBlacklist' );
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'WikiEditor' );
-
+wfLoadExtension( 'SaferHTMLTag' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
