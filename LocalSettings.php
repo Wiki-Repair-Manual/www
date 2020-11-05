@@ -58,7 +58,7 @@ $wgEmailAuthentication = true;
 ## Found in external_includes
 
 # MySQL specific settings
-$wgDBprefix = "";
+$wgDBprefix = "www";
 
 # MySQL table options to use during installation or update
 $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
