@@ -47,8 +47,16 @@ $wgLogos = [ '1x' => "$wgResourceBasePath/resources/assets/WikiRepairManual-logo
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
 
-$wgEmergencyContact = "apache@🌻.invalid";
-$wgPasswordSender = "apache@🌻.invalid";
+$wgEmergencyContact = "mediaAdmin@repairmanual.wiki";
+$wgPasswordSender = "noreply@repairmanual.wiki";
+$wgSMTP = [
+    'host'     => 'smtp.sendgrid.net',
+    'IDHost'   => 'repairmanual.wiki',
+    'port'     => 465,
+    'auth'     => true,
+    'username' => 'apikey',
+    'password' => $wgSMTPPassword
+];
 
 $wgEnotifUserTalk = false; # UPO
 $wgEnotifWatchlist = false; # UPO
