@@ -23,6 +23,7 @@ require_once "../external_includes/secrets.php";
 
 $wgSitename = "Wiki Repair Manual";
 $wgMetaNamespace = "Project";
+$wgRawHtml = true;
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -57,7 +58,7 @@ $wgEmailAuthentication = true;
 ## Found in external_includes
 
 # MySQL specific settings
-$wgDBprefix = "";
+$wgDBprefix = "www";
 
 # MySQL table options to use during installation or update
 $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
@@ -91,7 +92,7 @@ $wgShellLocale = "C.UTF-8";
 #$wgCacheDirectory = "$IP/cache";
 
 # Site language code, should be one of the list in ./languages/data/Names.php
-$wgLanguageCode = "en-ca";
+$wgLanguageCode = "en";
 
 ## Found in external_includes
 
@@ -132,9 +133,12 @@ wfLoadSkin( 'Vector' );
 # to LocalSettings.php. Check specific extension documentation for more details.
 # The following extensions were automatically enabled:
 wfLoadExtension( 'CategoryTree' );
-wfLoadExtension( 'CodeEditor' );
 wfLoadExtension( 'ConfirmEdit' );
+wfLoadExtension( 'ParserFunctions' );
+wfLoadExtension( 'PdfHandler' );
 wfLoadExtension( 'SpamBlacklist' );
+wfLoadExtension( 'SyntaxHighlight_GeSHi' );
+wfLoadExtension( 'TitleBlacklist' );
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'WikiEditor' );
 
