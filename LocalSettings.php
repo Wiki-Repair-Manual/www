@@ -15,6 +15,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
 
+
 ##external_includes
 require_once "../external_includes/secrets.php";
 
@@ -50,9 +51,9 @@ $wgEnableUserEmail = true; # UPO
 $wgEmergencyContact = "mediaAdmin@repairmanual.wiki";
 $wgPasswordSender = "noreply@repairmanual.wiki";
 $wgSMTP = [
-    'host'     => 'smtp.sendgrid.net',
+    'host'     => 'ssl://smtp.sendgrid.net',
     'IDHost'   => 'repairmanual.wiki',
-    'port'     => 25,
+    'port'     => 465,
     'auth'     => true,
     'username' => 'apikey',
     'password' => $wgSMTPPassword
@@ -155,4 +156,3 @@ wfLoadExtension( 'TitleBlacklist' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
-
