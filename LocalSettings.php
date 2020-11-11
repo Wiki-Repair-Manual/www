@@ -15,7 +15,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
 
-
 ##external_includes
 require_once "../external_includes/secrets.php";
 
@@ -67,7 +66,7 @@ $wgEmailAuthentication = true;
 ## Found in external_includes
 
 # MySQL specific settings
-$wgDBprefix = "www";
+$wgDBprefix = "testing";
 
 # MySQL table options to use during installation or update
 $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
@@ -154,6 +153,7 @@ wfLoadExtension( 'PdfHandler' );
 wfLoadExtension( 'SyntaxHighlight_GeSHi' );
 wfLoadExtension( 'TitleBlacklist' );
 wfLoadExtension( 'MediaWikiFarm' );
+wfLoadExtension( 'MW-OAuth2Client' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
