@@ -153,6 +153,7 @@ wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'PdfHandler' );
 wfLoadExtension( 'SyntaxHighlight_GeSHi' );
 wfLoadExtension( 'TitleBlacklist' );
+wfLoadExtension( 'MediaWikiFarm' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
